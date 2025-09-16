@@ -25,6 +25,13 @@ The turtle starts at position(0, 0) with heading 0 degrees.
 """
 
 ### YOUR CODE STARTS HERE
+initial_arm_length = 1
+
+for i in range(100):
+    degrees_turned_so_far = i * 10
+    current_arm_length = initial_arm_length * (phi**(degrees_turned_so_far / 90))
+    turtle.forward(current_arm_length)
+    turtle.left(10)
 
 
 ### YOUR CODE ENDS HERE
